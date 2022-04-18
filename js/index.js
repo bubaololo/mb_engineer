@@ -4,7 +4,10 @@ var swiper = new Swiper(".mySwiper", {
       type: "progressbar",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".quest__next",
+      prevEl: ".quest__prev",
     },
+    effect: 'fade',
+    allowTouchMove: false,
+
   });

@@ -1,20 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="quest">
     <div class="container">
-     <!-- Swiper -->
-     <div class="swiper mySwiper">
+      <div class="quest__header">
+        <div class="quest__header_title_wrapper">
+          <div class="quest__header_title">
+            <div class="quest__header_title-text">
+              Вопросник по потребностям
+              <div class="quest__header_title-tag">
+                СОКРАЩЁННЫЙ
+              </div>
+            </div>
+
+            <div class="quest__header_subtitle">
+              Сокращённый (для первичного знакомства с потребностью)
+            </div>
+          </div>
+        </div>
+        <div class="quest__header-question">
+          19 вопросов
+        </div>
+      </div>
+    </div>
+
+
+    <section class="quest__slider">
+
+      <div class="quest__slider_bar">
+        <div class="container">
+          <div class="quest__slider_bar_wrapper">
+            <div class="line"></div>
+            <div class="quest__slider_dot"></div>
+            <div class="quest__slider_dot"></div>
+            <div class="quest__slider_dot"></div>
+            <div class="quest__slider_dot"></div>
+            <div class="quest__slider_dot"></div>
+            <div class="quest__slider_dot"></div>
+            <div class="quest__slider_dot"></div>
+            <div class="quest__slider_dot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="quest__slider_wrapper mySwiper">
+
+          <div class="quest__slides swiper-wrapper">
+            <!-- ________SLIDE -->
+           <div class="swiper-slide">
+            <div class="quest__slide">
+              <div class="quest__slide_title_wrapper">
+                <div class="quest__slide_title">
+                  Описание потребности / задачи
+                </div>
+
+              </div>
+              <div class="quest__slide_forms_wrapper">
+
+                <div class="quest__input">
+                  <label for="story">Ключевые параметры требуемого решения (продукта или технологии)</label>
+                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="quest__slider_buttons_wrapper">
+              <div class="quest__next quest__button">Вперёд</div>
+            </div>
+          </div>
+          <!-- ________SLIDE -->
+          <div class="swiper-slide">
+            <div class="quest__slide">
+              <div class="quest__slide_title_wrapper">
+                <div class="quest__slide_title">
+                  Описание потребности / задачи
+                </div>
+                <div class="quest__slide_subtitle">
+                  Слова и словосочетания, наиболее полно характеризующие потребность.
+                </div>
+                <div class="redline"></div>
+              </div>
+              <div class="quest__slide_forms_wrapper">
+
+                <div class="quest__input">
+                  <label for="story">Ключевые параметры требуемого решения (продукта или технологии)</label>
+                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                </div>
+                <div class="quest__input">
+                  <label for="story">Ограничения по стоимости готового решения</label>
+                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                </div>
+                <div class="quest__input">
+                  <label for="story">Требования к сертификации</label>
+                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="quest__slider_buttons_wrapper">
+              <div class="quest__next quest__button">Далее</div>
+              <div class="quest__prev quest__button">Назад</div>
+            </div>
+          </div>
+          <!-- ________SLIDE -->
+          <div class="swiper-slide">
+            <div class="quest__slide">
+              <div class="quest__slide_title_wrapper">
+                <div class="quest__slide_title">
+                  Условия проекта
+                </div>
+                <div class="redline"></div>
+              </div>
+              <div class="quest__slide_forms_wrapper">
+
+                <div class="quest__input">
+                  <label for="story">Ограничения по срокам реализации проекта</label>
+                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                </div>
+                <div class="quest__input">
+                  <label for="story">Особые требования и ограничения по исполнителям</label>
+                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                </div>
+                <div class="quest__input">
+                  <label for="story">Прочие существенные ограничения</label>
+                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="quest__slider_buttons_wrapper">
+              <div class="quest__next quest__button">Вперёд</div>
+              <div class="quest__prev quest__button">Назад</div>
+            </div>
+          </div>
+                    <!-- ________SLIDE -->
+                    <div class="swiper-slide">
+                      <div class="quest__slide">
+                        <div class="quest__slide_title_wrapper">
+                          <div class="quest__slide_title">
+                            Известные аналоги
+                          </div>
+                          <div class="redline"></div>
+                        </div>
+                        <div class="quest__slide_forms_wrapper">
+          
+                          <div class="quest__input">
+                            <label for="story">Российские</label>
+                            <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+          </textarea>
+                          </div>
+                          <div class="quest__input">
+                            <label for="story">Зарубежные</label>
+                            <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+          </textarea>
+                          </div>
+                          <div class="quest__input">
+                            <label for="story">Сравнение требуемого решения с аналогами</label>
+                            <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+          </textarea>
+                          </div>
+          
+                        </div>
+          
+                      </div>
+                      <div class="quest__slider_buttons_wrapper">
+                        <div class="quest__next quest__button">Вперёд</div>
+                        <div class="quest__prev quest__button">Далее</div>
+                      </div>
+                    </div>
+
+
+          </div>
+
+
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Swiper -->
+    <!-- <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">Slide 1</div>
           <div class="swiper-slide">Slide 2</div>
@@ -29,57 +216,11 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
-      </div>
-    </div>
-    <style>
-        html,
-        body {
-          position: relative;
-          height: 100%;
-        }
-  
-        body {
-          background: #eee;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: #000;
-          margin: 0;
-          padding: 0;
-        }
-  
-        .swiper {
-          width: 100%;
-          height: 80vw;
-        }
-  
-        .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: #fff;
-  
-          /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
-        }
-  
-        .swiper-slide img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      </style>
+      </div> -->
+
+  </div>
 </body>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/index.js"></script>
+
 </html>

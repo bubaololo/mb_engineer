@@ -410,3 +410,226 @@ font-weight: 500;
   object-fit: cover;
 }
 
+
+/* ____________________SWIPER */
+
+.swiper {
+  width: 100%;
+  height: 80vw;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quest__header {
+  display: flex;
+  justify-content: space-between;
+}
+.quest__header_title {
+  position: relative;
+  display: inline-block;
+}
+.quest__header_title-text {
+  position: relative;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.quest__header_subtitle {
+  font-size: 16px;
+  line-height: 18px;
+  color: #58595B;
+
+}
+.quest__header_title-tag {
+  position: absolute;
+  top: 10px;
+  right: -125px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #738D9A;
+  background-color: #F7F9FA;
+  border-radius: 30px;
+  padding: 9px 14px;
+}
+
+.quest__slider_bar {
+  background-color: #F7F9FA;
+  display: inline-block;
+  width: 100%;
+}
+.quest__slider_bar_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  height: 80px;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 20px 20px 100px rgba(124, 142, 139, 0.15);
+border-radius: 12px;
+}
+
+.quest__slider_dot {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/quest_next_next.svg);
+}
+.quest__slider .line {
+  position: absolute;
+  top: 50%;
+  left: 38px;
+  width: calc(100% - 83px);
+  border-bottom: 1px dashed #D1D9DD;
+}
+.quest__slider_wrapper {
+  min-height: 1024px;
+}
+.quest__slides {
+  margin-top: 60px;
+}
+.quest__slide_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.quest__slide_title_wrapper {
+  position: relative;
+  text-align: left;
+}
+.quest__slide_subtitle {
+  font-weight: 400;
+  color:#58595B;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.quest .redline {
+height: 2px;
+width: 93px;
+left: 0;
+bottom: 0;
+background-color: #E04E39;
+}
+.quest__slide {
+  width: 100%;
+}
+.quest__slide_forms_wrapper {
+  margin-top: 60px;
+  text-align: left;
+}
+.quest__input {
+margin-bottom: 40px;
+}
+.quest label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #58595B;
+  display: block;
+  margin-bottom: 20px;
+}
+.quest__input::placeholder {
+  color: rgba(17, 17, 17, 0.48);
+}
+.quest__textarea {
+  padding: 25px;
+  background-color: #FBFBFB;
+  border-radius: 4px;
+  border: 1px solid #EBEBEB;
+  height: 100px;
+  display: block;
+  resize: vertical;
+  width: 100%;
+}
+.quest__textarea::-webkit-resizer{
+background-repeat: no-repeat;
+background-size: 70%;
+background-image: url(../img/corner.svg);
+}
+
+.quest .swiper-slide {
+  display: block;
+  visibility: hidden;
+}
+.quest .swiper-slide.swiper-slide-visible {
+  visibility: visible;
+}
+.quest__slider_buttons_wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.quest__button {
+  position: relative;
+  padding: 14px 15px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.quest__prev {
+  border: 1px solid #738D9A;
+  color: #738D9A;
+  padding-left: 40px;
+}
+.quest__next {
+background-color: #E04E39;
+  color: #738D9A;
+  color: #fff;
+  padding-right: 40px;
+}
+.quest__prev::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-image: url(../img/quest_arrow_prev.svg);
+  top: 17px;
+  left: 15px;
+  
+}
+.quest__next::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-image: url(../img/quest_arrow_next.svg);
+  top: 17px;
+  right: 15px;
+}
