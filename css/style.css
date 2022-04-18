@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900&display=swap&subset=cyrillic");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+svg,
+a {
+  transition: 0.3s all;
+}
+
+svg,
+img {
+  display: block;
+}
+
+.icon-svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+}
+
+.body--light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.body--dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.eng__main .cards__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.eng__main .card {
+  width: 278px;
+  height: 362px;
+  border-radius: 12px;
+  padding: 40px 35px;
+  transition: all 0.5s;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.eng__main .card:hover {
+    box-shadow: 20px 20px 100px rgba(124, 142, 139, 0.15);
+
+}
+
+.eng__main .card__link_icon {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.eng__main .card:hover .card__link_icon {
+  opacity: 1;
+}
+.eng__main .card__link_wrapper {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 40px;
+}
+
+.eng__main .card__icon {
+  margin-bottom: 57px;
+}
+.eng__main .card__text {
+  font-weight: 40;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.poll {
+  background-color: #f7f9fa;
+  padding: 100px 0;
+}
+.poll__banner {
+  background-color: #fff;
+  background-position: top 28px right 40px;
+  background-repeat: no-repeat;
+  margin-bottom: 76px;
+  padding: 70px 80px;
+  border-radius: 12px;
+}
+.poll__banner_title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+.poll__banner_subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  max-width: 48ch;
+}
+.poll__banner_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 67ch;
+  margin-bottom: 70px;
+}
+.poll__item {
+  border-radius: 12px;
+  transition: all .3s;
+  text-decoration: none;
+  color: inherit;
+display: block;
+}
+.poll__item:hover {
+    background-color: #FBFBFB;
+    box-shadow: 20px 20px 100px rgba(124, 142, 139, 0.15);
+}
+.poll__item:hover .poll__item_wrapper {
+    background-image: url(../img/poll_arrow-active.svg);
+    border-top: 1px solid #FBFBFB;
+}
+
+.poll__item_wrapper {
+  display: flex;
+  padding: 40px 57px;
+  position: relative;
+  border-top: 1px solid #d1d9dd;
+  max-width: 1030px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-image: url(../img/poll_arrow.svg);
+  background-position: top 40px right 57px;
+}
+.poll__item_num {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 20px;
+  margin-top: 12px;
+}
+.poll__item_title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+}
+.poll__item_content {
+  max-width: 35ch;
+  margin-left: 25%;
+}
+.poll__item_arrow {
+  position: absolute;
+  top: 44px;
+  right: 57px;
+}
+.eng__video {
+    margin: 100px 0;
+}
+.eng__video_title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 35px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.eng__video_clips {
+    display: flex;
+    gap: 20px;
+}
+.eng__clip {
+    border-radius: 12px;
+}
+.eng__main_banner_wrapper {
+    padding: 60px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/boy_baner_background.jpg);
+    position: relative;
+    text-decoration: none;
+    color: #58595B;
+    display: block;
+    border-radius: 12px;
+}
+.eng__main_banner_title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.eng__main_banner_text p+p {
+margin-bottom: 35px;
+}
+.eng__main_banner_text {
+    margin-bottom: 48px;
+    max-width: 86ch;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+.eng__main_banner_text b {
+font-weight: 500;
+}
+
+.boy {
+    position: absolute;
+    right: 0;
+    top: -10%;
+}
+.eng__main_banner_link {
+    color: #0E95E0;
+    text-decoration: underline;
+    position: relative;
+    display: inline-block;
+}
+
+.eng__main_banner_link::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -29px;
+    height: 16px;
+    width: 19px;
+    background-image: url(../img/boy_baner_arrow.svg);
+    background-repeat: no-repeat;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
