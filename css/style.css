@@ -493,18 +493,40 @@ font-weight: 500;
   height: 80px;
   margin: 40px auto;
   background-color: #fff;
+  background-image: url(../img/quest_line.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
   box-shadow: 20px 20px 100px rgba(124, 142, 139, 0.15);
 border-radius: 12px;
 }
 
-.quest__slider_dot {
+.quest .swiper-pagination-bullet {
   display: inline-block;
   position: relative;
   width: 30px;
   height: 30px;
+  background: unset;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: none;
+opacity: unset;
+
+  background-image: url(../img/quest_gray.svg);
+}
+
+.quest .bullet_next {
+  background-image: url(../img/quest_next.svg);
+}
+.quest .bullet_next_next {
   background-image: url(../img/quest_next_next.svg);
+}
+.quest .bullet_checked {
+  background-image: url(../img/quest_check.svg);;
+}
+
+.quest .swiper-pagination-bullet-active {
+  background-image: url(../img/quest_next.svg);
 }
 .quest__slider .line {
   position: absolute;
