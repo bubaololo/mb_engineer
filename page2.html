@@ -33,190 +33,245 @@
         </div>
       </div>
     </div>
-
-
     <section class="quest__slider">
-
+      <div class="success">
+        <img src="img/quest_success.svg" alt="icon" class="quest__success">
+        <div class="sucess_text">
+          Ваша анкета отправлена
+        </div>
+      </div>
       <div class="quest__slider_bar">
         <div class="container">
           <div class="quest__slider_bar_wrapper">
-            <!-- <div class="line"></div>
-            <div class="quest__slider_dot"></div> -->
-            <!-- <div class="quest__slider_dot"></div>
-            <div class="quest__slider_dot"></div>
-            <div class="quest__slider_dot"></div>
-            <div class="quest__slider_dot"></div>
-            <div class="quest__slider_dot"></div>
-            <div class="quest__slider_dot"></div>
-            <div class="quest__slider_dot"></div> -->
           </div>
         </div>
       </div>
       <div class="container">
         <div class="quest__slider_wrapper mySwiper">
-
-          <div class="quest__slides swiper-wrapper">
+            <form enctype="multipart/form-data" method="post" id="quest_form" class="quest__slides swiper-wrapper" onsubmit="send(event)">
             <!-- ________SLIDE -->
-           <div class="swiper-slide">
-            <div class="quest__slide">
-              <div class="quest__slide_title_wrapper">
-                <div class="quest__slide_title">
-                  Описание потребности / задачи
+            <div class="swiper-slide">
+              <div class="quest__slide">
+                <div class="quest__slide_title_wrapper">
+                  <div class="quest__slide_title">
+                    Описание потребности / задачи
+                  </div>
                 </div>
+                <div class="quest__slide_forms_wrapper">
 
-              </div>
-              <div class="quest__slide_forms_wrapper">
-
-                <div class="quest__input">
-                  <label for="story">Ключевые параметры требуемого решения (продукта или технологии)</label>
-                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+                  <div class="quest__input">
+                    <label for="story">Ключевые параметры требуемого решения (продукта или технологии)</label>
+                    <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
 </textarea>
+                  </div>
                 </div>
-
-
+              </div>
+              <div class="quest__slider_buttons_wrapper">
+                <div class="quest__next quest__button">Вперёд</div>
               </div>
             </div>
-            <div class="quest__slider_buttons_wrapper">
-              <div class="quest__next quest__button">Вперёд</div>
-            </div>
-          </div>
-          <!-- ________SLIDE -->
-          <div class="swiper-slide">
-            <div class="quest__slide">
-              <div class="quest__slide_title_wrapper">
-                <div class="quest__slide_title">
-                  Описание потребности / задачи
+            <!-- ________SLIDE -->
+            <div class="swiper-slide">
+              <div class="quest__slide">
+                <div class="quest__slide_title_wrapper">
+                  <div class="quest__slide_title">
+                    Описание потребности / задачи
+                  </div>
+                  <div class="quest__slide_subtitle">
+                    Слова и словосочетания, наиболее полно характеризующие потребность.
+                  </div>
+                  <div class="redline"></div>
                 </div>
-                <div class="quest__slide_subtitle">
-                  Слова и словосочетания, наиболее полно характеризующие потребность.
+                <div class="quest__slide_forms_wrapper">
+                  <div class="quest__input">
+                    <label for="story">Ключевые параметры требуемого решения (продукта или технологии)</label>
+                    <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+                    </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Ограничения по стоимости готового решения</label>
+                    <textarea id="quest2" name="quest2" class="quest__textarea" placeholder="Мой ответ">
+                    </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Требования к сертификации</label>
+                    <textarea id="quest3" name="quest3" class="quest__textarea" placeholder="Мой ответ">
+                    </textarea>
+                  </div>
                 </div>
-                <div class="redline"></div>
               </div>
-              <div class="quest__slide_forms_wrapper">
-
-                <div class="quest__input">
-                  <label for="story">Ключевые параметры требуемого решения (продукта или технологии)</label>
-                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
-</textarea>
-                </div>
-                <div class="quest__input">
-                  <label for="story">Ограничения по стоимости готового решения</label>
-                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
-</textarea>
-                </div>
-                <div class="quest__input">
-                  <label for="story">Требования к сертификации</label>
-                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
-</textarea>
-                </div>
-
+              <div class="quest__slider_buttons_wrapper">
+                <div class="quest__next quest__button">Далее</div>
+                <div class="quest__prev quest__button">Назад</div>
               </div>
-
             </div>
-            <div class="quest__slider_buttons_wrapper">
-              <div class="quest__next quest__button">Далее</div>
-              <div class="quest__prev quest__button">Назад</div>
-            </div>
-          </div>
-          <!-- ________SLIDE -->
-          <div class="swiper-slide">
-            <div class="quest__slide">
-              <div class="quest__slide_title_wrapper">
-                <div class="quest__slide_title">
-                  Условия проекта
+            <!-- ________SLIDE -->
+            <div class="swiper-slide">
+              <div class="quest__slide">
+                <div class="quest__slide_title_wrapper">
+                  <div class="quest__slide_title">
+                    Условия проекта
+                  </div>
+                  <div class="redline"></div>
                 </div>
-                <div class="redline"></div>
+                <div class="quest__slide_forms_wrapper">
+
+                  <div class="quest__input">
+                    <label for="story">Ограничения по срокам реализации проекта</label>
+                    <textarea id="quest4" name="quest4" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Особые требования и ограничения по исполнителям</label>
+                    <textarea id="quest5" name="quest5" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Прочие существенные ограничения</label>
+                    <textarea id="quest6" name="quest6" class="quest__textarea" placeholder="Мой ответ">
+</textarea>
+                  </div>
+                </div>
               </div>
-              <div class="quest__slide_forms_wrapper">
-
-                <div class="quest__input">
-                  <label for="story">Ограничения по срокам реализации проекта</label>
-                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
-</textarea>
-                </div>
-                <div class="quest__input">
-                  <label for="story">Особые требования и ограничения по исполнителям</label>
-                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
-</textarea>
-                </div>
-                <div class="quest__input">
-                  <label for="story">Прочие существенные ограничения</label>
-                  <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
-</textarea>
-                </div>
-
+              <div class="quest__slider_buttons_wrapper">
+                <div class="quest__next quest__button">Далее</div>
+                <div class="quest__prev quest__button">Назад</div>
               </div>
-
             </div>
-            <div class="quest__slider_buttons_wrapper">
-              <div class="quest__next quest__button">Вперёд</div>
-              <div class="quest__prev quest__button">Назад</div>
-            </div>
-          </div>
-                    <!-- ________SLIDE -->
-                    <div class="swiper-slide">
-                      <div class="quest__slide">
-                        <div class="quest__slide_title_wrapper">
-                          <div class="quest__slide_title">
-                            Известные аналоги
-                          </div>
-                          <div class="redline"></div>
-                        </div>
-                        <div class="quest__slide_forms_wrapper">
-          
-                          <div class="quest__input">
-                            <label for="story">Российские</label>
-                            <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+            <!-- ________SLIDE -->
+            <div class="swiper-slide">
+              <div class="quest__slide">
+                <div class="quest__slide_title_wrapper">
+                  <div class="quest__slide_title">
+                    Известные аналоги
+                  </div>
+                  <div class="redline"></div>
+                </div>
+                <div class="quest__slide_forms_wrapper">
+                  <div class="quest__input">
+                    <label for="story">Российские</label>
+                    <textarea id="quest7" name="quest7" class="quest__textarea" placeholder="Мой ответ">
           </textarea>
-                          </div>
-                          <div class="quest__input">
-                            <label for="story">Зарубежные</label>
-                            <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Зарубежные</label>
+                    <textarea id="quest8" name="quest8" class="quest__textarea" placeholder="Мой ответ">
           </textarea>
-                          </div>
-                          <div class="quest__input">
-                            <label for="story">Сравнение требуемого решения с аналогами</label>
-                            <textarea id="quest1" name="quest1" class="quest__textarea" placeholder="Мой ответ">
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Сравнение требуемого решения с аналогами</label>
+                    <textarea id="quest9" name="quest9" class="quest__textarea" placeholder="Мой ответ">
           </textarea>
-                          </div>
-          
-                        </div>
-          
-                      </div>
-                      <div class="quest__slider_buttons_wrapper">
-                        <div class="quest__next quest__button">Вперёд</div>
-                        <div class="quest__prev quest__button">Далее</div>
-                      </div>
-                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__slider_buttons_wrapper">
+                <div class="quest__next quest__button">Далее</div>
+                <div class="quest__prev quest__button">Назад</div>
+              </div>
+            </div>
+            <!-- ________SLIDE -->
+            <div class="swiper-slide">
+              <div class="quest__slide">
+                <div class="quest__slide_title_wrapper">
+                  <div class="quest__slide_title">
+                    История самостоятельной проработки вопроса
+                  </div>
+                  <div class="redline"></div>
+                </div>
+                <div class="quest__slide_forms_wrapper">
+                  <div class="quest__input">
+                    <label for="story">История (если существует) взаимодействия с исполнителями</label>
+                    <textarea id="quest10" name="quest10" class="quest__textarea" placeholder="Мой ответ">
+          </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Достигнутые результаты и ограничения</label>
+                    <textarea id="quest11" name="quest11" class="quest__textarea" placeholder="Мой ответ">
+          </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Потенциальные исполнители</label>
+                    <textarea id="quest12" name="quest12" class="quest__textarea" placeholder="Мой ответ">
+          </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Используемые ранее зарубежные аналоги</label>
+                    <textarea id="quest13" name="quest13" class="quest__textarea" placeholder="Мой ответ">
+          </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__slider_buttons_wrapper">
+                <div class="quest__next quest__button">Далее</div>
+                <div class="quest__prev quest__button">Назад</div>
+              </div>
+            </div>
+            <!-- ________SLIDE -->
+            <div class="swiper-slide">
+              <div class="quest__slide">
+                <div class="quest__slide_title_wrapper">
+                  <div class="quest__slide_title">
+                    Рынок
+                  </div>
+                  <div class="redline"></div>
+                </div>
+                <div class="quest__slide_forms_wrapper">
 
+                  <div class="quest__input">
+                    <label for="story">Конечные пользователи</label>
+                    <textarea id="quest14" name="quest14" class="quest__textarea" placeholder="Мой ответ">
+                              </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Объём рынка</label>
+                    <textarea id="quest15" name="quest15" class="quest__textarea" placeholder="Мой ответ">
+                              </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__slider_buttons_wrapper">
+                <div class="quest__next quest__button">Далее</div>
+                <div class="quest__prev quest__button">Назад</div>
+              </div>
+            </div>
+            <!-- ________SLIDE -->
+            <div class="swiper-slide">
+              <div class="quest__slide">
+                <div class="quest__slide_title_wrapper">
+                  <div class="quest__slide_title">
+                    Контакты
+                  </div>
+                  <div class="redline"></div>
+                </div>
+                <div class="quest__slide_forms_wrapper">
 
-          </div>
-
-
-          <!-- <div class="swiper-pagination"></div> -->
+                  <div class="quest__input">
+                    <label for="story">Заказчик проекта (общие вопросы)</label>
+                    <textarea id="quest16" name="quest16" class="quest__textarea" placeholder="Мой ответ">
+                              </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Инициатор запроса (технические вопросы)</label>
+                    <textarea id="quest17" name="quest17" class="quest__textarea" placeholder="Мой ответ">
+                              </textarea>
+                  </div>
+                  <div class="quest__input">
+                    <label for="story">Потенциальные исполнители</label>
+                    <textarea id="quest18" name="quest18" class="quest__textarea" placeholder="Мой ответ">
+                              </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__slider_buttons_wrapper">
+                <input class="quest__button quest__submit_button" type="submit"></input>
+                <div class="quest__prev quest__button">Назад</div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-
     </section>
-
-
-    <!-- Swiper -->
-    <!-- <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div> -->
 
   </div>
 </body>
