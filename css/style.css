@@ -183,7 +183,8 @@ body {
 .eng__main .cards__wrapper {
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 19px;
 }
 .eng__main .card {
   width: 278px;
@@ -223,6 +224,7 @@ body {
   font-weight: 40;
   font-size: 16px;
   line-height: 24px;
+  max-width: 200px;
 }
 
 .poll {
@@ -847,6 +849,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+
+}
+.grant__contacts_items a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .grant__contacts_tel,

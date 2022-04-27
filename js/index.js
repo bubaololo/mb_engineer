@@ -86,9 +86,17 @@ var swiper = new Swiper(".manufSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 5,
+  slidesPerView: 1.2,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+  }
 });
 
 var swiper2 = new Swiper(".manufSwiperTop", {
