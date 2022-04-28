@@ -9,22 +9,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
   <div class="finsupport">
-
     <div class="projects__top_slider">
       <div class="container">
         <div class="projects__top_slider_wrapper">
-
           <div class="projects__top_slider_header">
             <div class="projects__top_slider_top_title">
               Успешные проекты
             </div>
             <div class="projects__top_slider_top_arrows">
-              <!-- <div class="projects__top_arrow projects__top_prev"></div>
-            <div class="projects__top_arrow projects__top_next"></div> -->
               <img src="img/finsupport_arrow_prev.svg" class="projects__top_arrow projects__top_prev">
               <img src="img/finsupport_arrow_next.svg" class="projects__top_arrow projects__top_next">
             </div>
@@ -33,7 +30,7 @@
             <div class="swiper-wrapper">
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a data-fancybox data-touch='false' href="#manufacture1"  class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -47,7 +44,7 @@
               </div>
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a data-fancybox data-touch='false' href="#manufacture1"  class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo2.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -62,7 +59,7 @@
 
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a data-fancybox data-touch='false' href="#manufacture1"  class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo3.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -77,7 +74,7 @@
 
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a data-fancybox data-touch='false' href="#manufacture1" class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo4.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -92,7 +89,7 @@
 
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a data-fancybox data-touch='false' href="#manufacture1" class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -107,7 +104,7 @@
 
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a data-fancybox data-touch='false' href="#manufacture1" class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo2.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -122,7 +119,7 @@
 
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a hdata-fancybox data-touch='false' href="#manufacture1" class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -137,7 +134,7 @@
 
               <!-- __________CARD -->
               <div class="swiper-slide">
-                <a href="#" class="projects__top_card">
+                <a data-fancybox data-touch='false' href="#manufacture1"  class="projects__top_card">
                   <div class="projects__top_card_logo_wrapper">
                     <img src="img/manufac_card_logo2.svg" alt="logo" class="projects__top_card_logo">
                   </div>
@@ -249,7 +246,184 @@
     </section>
 
   </div>
+  <div class="manufacture__popup_container" id="manufacture1" style="display: none;">
 
+    <div class="manufacture__popup_top">
+      <div class="manufacture__popup_slider">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper manufSwiperTop">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img2.jpg" />
+            </div>
+          </div>
+
+        </div>
+        <div thumbsSlider="" class="swiper manufSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content_img/slider_img2.jpg" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+        </div>
+      </div>
+      <div class="manufacture__popup_title_wrapper">
+      <div class="manufacture__popup_title">
+        Etalon permanent makeup
+      </div>
+      <div class="manufacture__popup_subtitle">
+        Полное наименование организации: ООО “Эталон перманент мэйкап”
+      </div>
+      <div class="manufacture__popup_tag">
+        Косметология
+      </div>
+    </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor tincidunt lectus varius massa auctor nibh
+        duis leo. Facilisis quam aliquam pharetra fringilla arcu diam, euismod quam congue. Aliquet suspendisse nisi,
+        orci nulla iaculis orci ipsum diam vel. Curabitur cras pharetra dictum hendrerit ultrices id accumsan,
+        amet.<br><br>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor tincidunt lectus varius massa auctor nibh
+        duis leo. Facilisis quam aliquam pharetra fringilla arcu diam, euismod quam congue. Aliquet suspendisse nisi,
+        orci nulla iaculis orci ipsum diam vel. Curabitur cras pharetra dictum hendrerit ultrices id accumsan,
+        amet.<br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor tincidunt lectus varius massa auctor nibh
+        duis leo. Facilisis quam aliquam pharetra fringilla arcu diam, euismod quam congue. Aliquet suspendisse nisi,
+        orci nulla iaculis orci ipsum diam vel. Curabitur cras pharetra dictum hendrerit ultrices id accumsan,
+        amet.<br><br>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor tincidunt lectus varius massa auctor nibh
+        duis leo. Facilisis quam aliquam pharetra fringilla arcu diam, euismod quam congue. Aliquet suspendisse nisi,
+        orci nulla iaculis orci ipsum diam vel. Curabitur cras pharetra dictum hendrerit ultrices id accumsan,
+        amet.<br><br>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor tincidunt lectus varius massa auctor nibh
+        duis leo. Facilisis quam aliquam pharetra fringilla arcu diam, euismod quam congue.<br><br>
+      </p>
+    </div>
+    <div class="manufacture__popup_bottom">
+      <div class="manufacture__popup_bottom_left">
+        <div class="manufacture__popup_bottom_icons_wrapper">
+          <div class="manufacture__popup_bottom_icons_text">
+            Социальные сети
+          </div>
+          <div class="manufacture__popup_bottom_icons">
+            <a href="#" class="manuf_soc_youtube">
+            </a>
+            <a href="#" class="manuf_soc_vk">
+            </a>
+          </div>
+        </div>
+        <div class="manufacture__popup_bottom_left_list">
+          <div class="manufacture__popup_bottom_left_string">
+            <div class="manufacture__popup_bottom_left-key">
+              Телефон
+            </div>
+            <div class="manufacture__popup_bottom_left-value">
+              +7 (905) 000-00-00
+            </div>
+          </div>
+          <div class="manufacture__popup_bottom_left_string">
+            <div class="manufacture__popup_bottom_left-key">
+              Email
+            </div>
+            <div class="manufacture__popup_bottom_left-value">
+              email@mail.ru
+            </div>
+          </div>
+          <div class="manufacture__popup_bottom_left_string">
+            <div class="manufacture__popup_bottom_left-key">
+              Веб сайт
+            </div>
+            <div class="manufacture__popup_bottom_left-value">
+              www.company.ru
+            </div>
+          </div>
+          <div class="manufacture__popup_bottom_left_string">
+            <div class="manufacture__popup_bottom_left-key">
+              Контактное лицо
+            </div>
+            <div class="manufacture__popup_bottom_left-value">
+              Имя Фамилия Отчество
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="manufacture__popup_bottom_right">
+        <div class="manufacture__popup_bottom_right_string">
+          <div class="manufacture__popup_bottom_right-key">
+            Фактический адрес:
+          </div>
+          <div class="manufacture__popup_bottom_right-value">
+            Полное наименование организации
+          </div>
+        </div>
+        <div class="manufacture__popup_bottom_right_string">
+          <div class="manufacture__popup_bottom_right-key">
+            ИНН:
+          </div>
+          <div class="manufacture__popup_bottom_right-value">
+            795565456876321
+          </div>
+        </div>
+        <div class="manufacture__popup_bottom_right_string">
+          <div class="manufacture__popup_bottom_right-key">
+            ФИО и должность руководителя
+          </div>
+          <div class="manufacture__popup_bottom_right-value">
+            ФИО и должность руководителя
+          </div>
+        </div>
+        <div class="manufacture__popup_bottom_right_string">
+          <div class="manufacture__popup_bottom_right-key">
+            Номер контактного телефона:
+          </div>
+          <div class="manufacture__popup_bottom_right-value">
+            +7 (905) 000-00-00
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>

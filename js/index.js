@@ -113,9 +113,21 @@ var swiper3 = new Swiper(".projects__top_Swiper", {
     nextEl: ".projects__top_next",
     prevEl: ".projects__top_prev",
   },
-  slidesPerView: 4,
+  slidesPerView: 1.5,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      
+    },
+    900: {
+      slidesPerView: 4,
+      
+    },
+  }
 });
 
 var swiper4 = new Swiper(".projects__bot_Swiper", {
@@ -125,12 +137,30 @@ var swiper4 = new Swiper(".projects__bot_Swiper", {
     // currentClass: "quest__slider_dot",
     // progressbarFillClass: ".swiper-pagination-bullet-active",
   },
-  spaceBetween: 30,
+  spaceBetween: 15,
   navigation: {
     nextEl: ".projects__bot_next",
     prevEl: ".projects__bot_prev",
   },
-  slidesPerView: 5,
+  slidesPerView: 1.5,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      
+    },
+    900: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      
+    },
+    // 1150: {
+    //   slidesPerView: 5,
+    //   spaceBetween: 30,
+    // },
+  }
 });
